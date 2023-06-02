@@ -17,9 +17,7 @@ const ProductProps: FC<cardData> = ({
       {/*product picture */}
 
       <ImageSLide cover={cover} authorCover={authorCover} />
-
       {/* product Text */}
-
       <Link to="products">
         <ProductFeaturedText
           authorName={authorName}
