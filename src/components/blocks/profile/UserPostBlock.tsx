@@ -39,15 +39,17 @@ const UserPostBlock = () => {
           Isaac Etor posts
         </h1>
         {/* user posts */}
-        <ProductProps
-          cover={dummyImage}
-          authorCover={profile}
-          authorName="Eloy"
-          place="Sao Paulo, Brazil"
-          rating={4.84}
-          amount={33}
-          date="Jul 29 - Aug 3"
-        />
+        <div className="grid gap-5 grid-cols-2 max-md:grid-cols-1">
+          <ProductProps
+            cover={dummyImage}
+            authorCover={profile}
+            authorName="Eloy"
+            place="Sao Paulo, Brazil"
+            rating={4.84}
+            amount={33}
+            date="Jul 29 - Aug 3"
+          />
+        </div>
       </div>
     </div>
   );
