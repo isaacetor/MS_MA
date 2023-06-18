@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <header className="h-[80px] bg-white w-full border-b-[1px] sticky top-0 ">
+    <header className="h-[80px] bg-white w-full border-b-[1px] sticky top-0 z-40">
       <div className="h-full m-[auto] w-[90%] flex justify-between items-center bg-white z-index-20">
         {/* logo */}
         <div className="text-globalTextColor text-xl font-medium">MSMA</div>
@@ -48,7 +48,7 @@ const Header = () => {
 
         {/* dropdown */}
         {showAuthNav ? (
-          <div className="absolute right-10 top-20 z-50">
+          <div className="absolute right-20 top-24 z-50">
             <DropdownProps />
           </div>
         ) : null}
