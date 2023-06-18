@@ -2,8 +2,15 @@ import { BiSearch } from "react-icons/bi";
 import { FaUserCircle } from "react-icons/fa";
 import { IoIosMenu } from "react-icons/io";
 import { DropdownProps } from "..";
+import { useState } from "react";
 
 const Header = () => {
+  const [showAuthNav, setAuthNav] = useState<boolean>(false);
+
+  const showAuth = () => {
+    setAuthNav(!showAuthNav);
+  };
+
   return (
     <header className="h-[80px] bg-white w-full border-b-[1px] sticky top-0 ">
       <div className="h-full m-[auto] w-[90%] flex justify-between items-center bg-white z-index-20">
@@ -27,7 +34,10 @@ const Header = () => {
         </div>
 
         {/* auth */}
-        <div className="p-3 rounded-full border flex items-center justify-center gap-3 cursor-pointer">
+        <div
+          className="p-3 rounded-full border flex items-center justify-center gap-3 cursor-pointer"
+          onClick={showAuth}
+        >
           <div className="text-2xl">
             <IoIosMenu />
           </div>
@@ -37,9 +47,11 @@ const Header = () => {
         </div>
 
         {/* dropdown */}
-        <div className="absolute right-10 top-20 z-50">
-          <DropdownProps />
-        </div>
+        {showAuthNav ? (
+          <div className="absolute right-10 top-20 z-50">
+            <DropdownProps />
+          </div>
+        ) : null}
       </div>
     </header>
   );
