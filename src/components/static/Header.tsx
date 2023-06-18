@@ -37,8 +37,8 @@ const Header = () => {
         </div>
 
         {/* dropdown */}
-        <div className="absolute right-10 top-20 z-[9999]">
-          {/* <DropdownProps /> */}
+        <div className="absolute right-10 top-20 z-50">
+          <DropdownProps />
         </div>
       </div>
     </header>

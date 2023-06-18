@@ -1,7 +1,9 @@
 const CategoryProps = () => {
   return (
     <div>
-      <p className="">product</p>
+      <p className="cursor-pointer text-black hover:text-globalTextColor-hover ">
+        product
+      </p>
     </div>
   );
 };
