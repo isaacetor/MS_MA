@@ -5,6 +5,7 @@ import { useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import { HeaderData } from "../../types";
 import { FC } from "react";
+import { Link } from "react-router-dom";
 
 const Header: FC<HeaderData> = ({ width }) => {
   const [showAuthNav, setAuthNav] = useState<boolean>(false);
@@ -19,7 +20,9 @@ const Header: FC<HeaderData> = ({ width }) => {
         className={`h-full m-[auto] w-${width} flex justify-between items-center bg-white z-index-20`}
       >
         {/* logo */}
-        <div className="text-globalTextColor text-xl font-medium">MSMA</div>
+        <Link to="/">
+          <div className="text-globalTextColor text-xl font-medium">MSMA</div>
+        </Link>
 
         {/* search */}
         <SearchProps placeholder="Serch for an item" icons={<BiSearch />} />
