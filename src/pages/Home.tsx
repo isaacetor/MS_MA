@@ -19,6 +19,7 @@ const Home = () => {
         amount={33}
         date="Jul 29 - Aug 3"
       />
+
       <ProductProps
         cover={dummyImage}
         authorCover={profile}

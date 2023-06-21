@@ -30,3 +30,18 @@ export type textData = {
   amount: number;
   date: string;
 };
+
+export type iHead = {
+  name: string;
+  rating: string;
+  reviews: string;
+  place: string;
+};
+
+export type iEntire = {
+  host: string;
+  guests: number;
+  bedrooms: number;
+  beds: number;
+  baths: number;
+};

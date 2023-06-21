@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ImageSLide, ProductFeaturedText } from ".";
 import { cardData } from "../../types";
 import { FC } from "react";
@@ -19,13 +20,15 @@ const ProductProps: FC<cardData> = ({
 
       {/* product Text */}
 
-      <ProductFeaturedText
-        authorName={authorName}
-        place={place}
-        rating={rating}
-        amount={amount}
-        date={date}
-      />
+      <Link to="products">
+        <ProductFeaturedText
+          authorName={authorName}
+          place={place}
+          rating={rating}
+          amount={amount}
+          date={date}
+        />
+      </Link>
     </div>
   );
 };

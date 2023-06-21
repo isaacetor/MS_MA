@@ -5,6 +5,7 @@ import {
   MdOutlineKeyboardArrowLeft,
 } from "react-icons/md";
 import { imageData } from "../../types";
+import { Link } from "react-router-dom";
 
 const ImageSLide: FC<imageData> = ({ authorCover, cover }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -35,10 +36,12 @@ const ImageSLide: FC<imageData> = ({ authorCover, cover }) => {
       <div className="absolute cursor-pointer text-white shadow-md hover:text-purple-700 text-2xl top-3 right-3 transition-all ease-in duration-200">
         <AiTwotoneHeart />
       </div>
-      <img
-        className="w-full h-full rounded-2xl object-cover object-top transition-all ease-in duration-500 max-sm:rounded-none"
-        src={cover[currentImageIndex]}
-      />
+      <Link to="products">
+        <img
+          className="w-full h-full rounded-2xl object-cover object-top transition-all ease-in duration-500 max-sm:rounded-none"
+          src={cover[currentImageIndex]}
+        />
+      </Link>
       <div
         className={`w-full ${
           show ? "block" : "hidden"
