@@ -19,9 +19,10 @@ const Categories = () => {
       id="hide-scrollbar"
       className={`${
         shadow ? "h-[80px]" : "h-[98px]"
-      } w-full sticky top-[80px] bg-white ${
+      } w-full sticky top-[80px] bg-white  ${
         shadow ? "shadow-md" : null
-      } transition-all ease-in-out duration-200 z-20`}
+      } transition-all ease-in-out duration-200 z-20 
+      }`}
     >
       <div className="w-[90%] m-[auto] h-full flex gap-10 items-center  overflow-y-scroll no-scrollbar">
         <CategoryProps />

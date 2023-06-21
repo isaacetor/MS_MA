@@ -2,9 +2,10 @@ import { ProductProps } from "../components";
 import img1 from "../assets/jpg/Menstylica.jpeg";
 import img2 from "../assets/jpg/suit.jpeg";
 import img3 from "../assets/jpg/SHOES.jpeg";
+import img4 from "../assets/jpg/INSTASHOP.jpeg";
 import profile from "../assets/jpg/profile.jpeg";
 
-const dummyImage = [img1, img3, img2];
+const dummyImage = [img1, img3, img4, img2];
 
 const Home = () => {
   return (

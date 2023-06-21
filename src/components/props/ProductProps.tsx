@@ -12,7 +12,7 @@ const ProductProps: FC<cardData> = ({
   place,
 }) => {
   return (
-    <div className="flex flex-col gap-1 w-full sm:w-[300px] mb-6 mt-7">
+    <div className="flex flex-col gap-1 w-full sm:w-[340px] mb-6 mt-7">
       {/*product picture */}
 
       <ImageSLide cover={cover} authorCover={authorCover} />

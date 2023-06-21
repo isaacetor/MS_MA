@@ -30,13 +30,13 @@ const ImageSLide: FC<imageData> = ({ authorCover, cover }) => {
       onMouseLeave={() => {
         setShow(false);
       }}
-      className="relative w-full h-[300px] rounded-2xl"
+      className="relative w-full h-[315px] rounded-2xl"
     >
       <div className="absolute cursor-pointer text-white shadow-md hover:text-purple-700 text-2xl top-3 right-3 transition-all ease-in duration-200">
         <AiTwotoneHeart />
       </div>
       <img
-        className="w-full h-full rounded-2xl object-cover transition-all ease-in duration-500"
+        className="w-full h-full rounded-2xl object-cover object-top transition-all ease-in duration-500"
         src={cover[currentImageIndex]}
       />
       <div
@@ -59,8 +59,11 @@ const ImageSLide: FC<imageData> = ({ authorCover, cover }) => {
           <MdOutlineKeyboardArrowRight />
         </button>
       </div>
-      <div className="absolute w-10 h-10 bottom-3 left-3">
-        <img className="w-full h-full object-cover" src={authorCover} />
+      <div className="absolute w-14 h-14 bottom-3 left-3">
+        <img
+          className="w-full h-full object-cover object-top shadow-2xl rounded-full  "
+          src={authorCover}
+        />
       </div>
     </div>
   );
