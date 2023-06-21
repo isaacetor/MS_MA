@@ -1,5 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { lazy, Suspense } from "react";
+import { SingleProductlayout } from "../components";
+import { SingleProduct } from "../pages";
 // Lazy load the components and pages
 // const LazyHomeLayout = lazy(() => import('../components/Homelayout'));
 const Home = lazy(() => import("../pages/Home"));
@@ -22,6 +24,16 @@ export const elements = createBrowserRouter([
             <Home />
           </Suspense>
         ),
+      },
+    ],
+  },
+  {
+    path: "/products",
+    element: <SingleProductlayout />,
+    children: [
+      {
+        index: true,
+        element: <SingleProduct />,
       },
     ],
   },

@@ -4,10 +4,10 @@ import { Outlet } from "react-router-dom";
 const Homelayout = () => {
   return (
     <div className="h-full">
-      <Header />
+      <Header width="[90%]" />
       <Categories />
       <Outlet />
-      <Footer />
+      <Footer width="[90%]" sticky="fixed" />
     </div>
   );
 };

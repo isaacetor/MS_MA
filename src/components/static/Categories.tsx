@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../../styles/style.css";
 import { CategoryProps } from "..";
 
 const Categories = () => {
@@ -21,18 +20,14 @@ const Categories = () => {
       className={`${
         shadow ? "h-[80px]" : "h-[98px]"
       } w-full sticky top-[80px] bg-white ${
-        shadow ? "shadow-sm" : null
-      } transition-all ease-in-out duration-200`}
+        shadow ? "shadow-md" : null
+      } transition-all ease-in-out duration-200 z-20`}
     >
-      <div className="w-[90%] m-[auto] h-full flex gap-10 items-center overflow-y-hidden ">
+      <div className="w-[90%] m-[auto] h-full flex gap-10 items-center  overflow-y-scroll no-scrollbar">
         <CategoryProps />
         <CategoryProps />
         <CategoryProps />
-        <CategoryProps />
-        <CategoryProps />
-        <CategoryProps />
-        <CategoryProps />
-        <CategoryProps />
+
         <CategoryProps />
         <CategoryProps />
         <CategoryProps />

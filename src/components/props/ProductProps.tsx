@@ -1,17 +1,31 @@
-import { ProductFeaturedImage, ProductFeaturedText } from ".";
+import { ImageSLide, ProductFeaturedText } from ".";
+import { cardData } from "../../types";
+import { FC } from "react";
 
-const ProductProps = () => {
+const ProductProps: FC<cardData> = ({
+  cover,
+  authorCover,
+  authorName,
+  rating,
+  amount,
+  date,
+  place,
+}) => {
   return (
-    <div className=" h-[400px] overflow-hidden bg-black text-gray-400">
+    <div className="flex flex-col gap-1 w-full sm:w-[300px] mb-6 mt-7">
       {/*product picture */}
-      <div className="col-span-2 row-span-2 bg-orange-300">
-        <ProductFeaturedImage />
-      </div>
+
+      <ImageSLide cover={cover} authorCover={authorCover} />
 
       {/* product Text */}
-      <div className="col-span-2 row-span-1 bg-green-400">
-        <ProductFeaturedText />
-      </div>
+
+      <ProductFeaturedText
+        authorName={authorName}
+        place={place}
+        rating={rating}
+        amount={amount}
+        date={date}
+      />
     </div>
   );
 };
