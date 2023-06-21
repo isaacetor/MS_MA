@@ -10,7 +10,7 @@ const ProductFeaturedText: FC<textData> = ({
   date,
 }) => {
   return (
-    <div className="font-[600] text-slate-800 text-base mt-[10px]">
+    <div className="font-[600] text-slate-800 text-base mt-[14px]">
       <div className="flex cursor-pointer justify-between items-center">
         <div>{place}</div>
         <div className="flex items-center gap-1">

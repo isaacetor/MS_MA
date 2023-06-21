@@ -73,6 +73,159 @@ const Home = () => {
         amount={33}
         date="Jul 29 - Aug 3"
       />
+      <ProductProps
+        cover={dummyImage}
+        authorCover={profile}
+        authorName="Eloy"
+        place="Sao Paulo, Brazil"
+        rating={4.84}
+        amount={33}
+        date="Jul 29 - Aug 3"
+      />
+      <ProductProps
+        cover={dummyImage}
+        authorCover={profile}
+        authorName="Eloy"
+        place="Sao Paulo, Brazil"
+        rating={4.84}
+        amount={33}
+        date="Jul 29 - Aug 3"
+      />
+      <ProductProps
+        cover={dummyImage}
+        authorCover={profile}
+        authorName="Eloy"
+        place="Sao Paulo, Brazil"
+        rating={4.84}
+        amount={33}
+        date="Jul 29 - Aug 3"
+      />
+      <ProductProps
+        cover={dummyImage}
+        authorCover={profile}
+        authorName="Eloy"
+        place="Sao Paulo, Brazil"
+        rating={4.84}
+        amount={33}
+        date="Jul 29 - Aug 3"
+      />
+      <ProductProps
+        cover={dummyImage}
+        authorCover={profile}
+        authorName="Eloy"
+        place="Sao Paulo, Brazil"
+        rating={4.84}
+        amount={33}
+        date="Jul 29 - Aug 3"
+      />
+      <ProductProps
+        cover={dummyImage}
+        authorCover={profile}
+        authorName="Eloy"
+        place="Sao Paulo, Brazil"
+        rating={4.84}
+        amount={33}
+        date="Jul 29 - Aug 3"
+      />
+      <ProductProps
+        cover={dummyImage}
+        authorCover={profile}
+        authorName="Eloy"
+        place="Sao Paulo, Brazil"
+        rating={4.84}
+        amount={33}
+        date="Jul 29 - Aug 3"
+      />
+      <ProductProps
+        cover={dummyImage}
+        authorCover={profile}
+        authorName="Eloy"
+        place="Sao Paulo, Brazil"
+        rating={4.84}
+        amount={33}
+        date="Jul 29 - Aug 3"
+      />
+      <ProductProps
+        cover={dummyImage}
+        authorCover={profile}
+        authorName="Eloy"
+        place="Sao Paulo, Brazil"
+        rating={4.84}
+        amount={33}
+        date="Jul 29 - Aug 3"
+      />
+      <ProductProps
+        cover={dummyImage}
+        authorCover={profile}
+        authorName="Eloy"
+        place="Sao Paulo, Brazil"
+        rating={4.84}
+        amount={33}
+        date="Jul 29 - Aug 3"
+      />
+      <ProductProps
+        cover={dummyImage}
+        authorCover={profile}
+        authorName="Eloy"
+        place="Sao Paulo, Brazil"
+        rating={4.84}
+        amount={33}
+        date="Jul 29 - Aug 3"
+      />
+      <ProductProps
+        cover={dummyImage}
+        authorCover={profile}
+        authorName="Eloy"
+        place="Sao Paulo, Brazil"
+        rating={4.84}
+        amount={33}
+        date="Jul 29 - Aug 3"
+      />
+      <ProductProps
+        cover={dummyImage}
+        authorCover={profile}
+        authorName="Eloy"
+        place="Sao Paulo, Brazil"
+        rating={4.84}
+        amount={33}
+        date="Jul 29 - Aug 3"
+      />
+      <ProductProps
+        cover={dummyImage}
+        authorCover={profile}
+        authorName="Eloy"
+        place="Sao Paulo, Brazil"
+        rating={4.84}
+        amount={33}
+        date="Jul 29 - Aug 3"
+      />
+      <ProductProps
+        cover={dummyImage}
+        authorCover={profile}
+        authorName="Eloy"
+        place="Sao Paulo, Brazil"
+        rating={4.84}
+        amount={33}
+        date="Jul 29 - Aug 3"
+      />
+      <ProductProps
+        cover={dummyImage}
+        authorCover={profile}
+        authorName="Eloy"
+        place="Sao Paulo, Brazil"
+        rating={4.84}
+        amount={33}
+        date="Jul 29 - Aug 3"
+      />
+      <ProductProps
+        cover={dummyImage}
+        authorCover={profile}
+        authorName="Eloy"
+        place="Sao Paulo, Brazil"
+        rating={4.84}
+        amount={33}
+        date="Jul 29 - Aug 3"
+      />
     </div>
   );
 };
