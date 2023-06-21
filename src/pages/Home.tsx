@@ -9,7 +9,7 @@ const dummyImage = [img1, img3, img4, img2];
 
 const Home = () => {
   return (
-    <div className="w-full p-9 flex flex-wrap justify-evenly">
+    <div className="w-full flex flex-wrap justify-evenly ">
       <ProductProps
         cover={dummyImage}
         authorCover={profile}

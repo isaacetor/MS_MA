@@ -36,7 +36,7 @@ const ImageSLide: FC<imageData> = ({ authorCover, cover }) => {
         <AiTwotoneHeart />
       </div>
       <img
-        className="w-full h-full rounded-2xl object-cover object-top transition-all ease-in duration-500"
+        className="w-full h-full rounded-2xl object-cover object-top transition-all ease-in duration-500 max-sm:rounded-none"
         src={cover[currentImageIndex]}
       />
       <div
