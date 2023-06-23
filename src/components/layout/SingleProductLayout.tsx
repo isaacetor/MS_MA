@@ -6,7 +6,7 @@ const SingleProductLayout = () => {
     <div className="h-full">
       <Header width="[90%]" />
       <Outlet />
-      <Footer width="[90%]" sticky="" />
+      <Footer width="[90%]" sticky="fixed" />
     </div>
   );
 };
