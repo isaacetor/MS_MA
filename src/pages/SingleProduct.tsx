@@ -6,7 +6,7 @@ import Image from "../components/props/productProp/Image";
 import TitleArea from "../components/props/productProp/TitleArea";
 import Ad from "../components/props/productProp/Ad";
 import EntireHosting from "../components/props/productProp/EntireHosting";
-import { Offers, Reservation } from "../components";
+import { Offers, Reservation, Reviews } from "../components";
 
 const singleProduct = () => {
   const dummyImage = [img1, img3, img4, img2];
@@ -30,7 +30,7 @@ const singleProduct = () => {
         />
         <Image />
         <div className="w-full relative h-[fit-content] mt-4 flex gap-6">
-          <div className="flex pb-36 flex-col">
+          <div className="flex flex-col">
             <Ad />
             <EntireHosting
               host="BeCordial"
@@ -41,9 +41,12 @@ const singleProduct = () => {
             />
             <Offers />
           </div>
-          <div className="flex-1 hidden h-[fit-content] mt-8 sticky top-28 md:flex">
+          <div className="flex-1 hidden h-[fit-content] mt-8 sticky top-24 md:flex">
             <Reservation />
           </div>
+        </div>
+        <div className="py-20">
+          <Reviews />
         </div>
       </div>
     </div>

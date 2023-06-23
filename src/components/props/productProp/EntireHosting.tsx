@@ -49,7 +49,7 @@ const EntireHosting: FC<iEntire> = ({
           also see https://airbnb.com/rooms/4875630 its called The funky
           glasshouse).....
         </div>
-        <div className="underline font-[600]">
+        <div className="underline font-[600] cursor-pointer">
           Show more <span className="">{">"}</span>
         </div>
       </div>
