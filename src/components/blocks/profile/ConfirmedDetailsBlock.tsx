@@ -39,7 +39,9 @@ const ConfirmedDetailsBlock = () => {
         <div>
           <AiFillFlag />
         </div>
-        <div className="font-semibold underline">Report this profile</div>
+        <div className="font-semibold text-base underline">
+          Report this profile
+        </div>
       </div>
     </div>
   );

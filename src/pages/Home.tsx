@@ -9,7 +9,7 @@ const dummyImage = [img1, img3, img4, img2];
 
 const Home = () => {
   return (
-    <div className="w-full flex flex-wrap justify-evenly ">
+    <div className="w-[95%] m-auto grid gap-6 place-items-center grid-cols-4  max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:w-full">
       <ProductProps
         cover={dummyImage}
         authorCover={profile}

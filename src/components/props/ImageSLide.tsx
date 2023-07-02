@@ -62,12 +62,16 @@ const ImageSLide: FC<imageData> = ({ authorCover, cover }) => {
           <MdOutlineKeyboardArrowRight />
         </button>
       </div>
-      <div className="absolute w-14 h-14 bottom-3 left-3">
-        <img
-          className="w-full h-full object-cover object-top shadow-2xl rounded-full  "
-          src={authorCover}
-        />
-      </div>
+
+      {/* link to individual author page */}
+      <Link to="user">
+        <div className="absolute w-14 h-14 bottom-3 left-3">
+          <img
+            className="w-full h-full object-cover object-top shadow-2xl rounded-full  "
+            src={authorCover}
+          />
+        </div>
+      </Link>
     </div>
   );
 };

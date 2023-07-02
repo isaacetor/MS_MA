@@ -36,7 +36,7 @@ const UserPostBlock = () => {
       {/* user posts */}
       <div className=" flex flex-col gap-4">
         <h1 className="text-3xl font-bold max-md:text-2xl capitalize">
-          Isaac Etor listings
+          Isaac Etor posts
         </h1>
         {/* user posts */}
         <ProductProps
