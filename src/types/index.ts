@@ -45,3 +45,7 @@ export type iEntire = {
   beds: number;
   baths: number;
 };
+
+export type buttonData = {
+  text: string;
+};

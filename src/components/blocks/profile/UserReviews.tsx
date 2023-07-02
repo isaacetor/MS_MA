@@ -3,10 +3,10 @@ import pic from "../../../assets/jpg/suit.jpeg";
 const UserReviews = () => {
   return (
     <div>
-      <div className="w-[full] md:w-[50%] h-[fit-content] border-[1px] border-[lightgrey] rounded-xl p-[20px] flex flex-col gap-14">
+      <div className="w-[full]  h-[fit-content] border-[1px] border-[lightgrey] rounded-xl p-[20px] flex flex-col gap-14">
         <div className="text-[14px] md:text-[18px]">
-          “…Riley is really nice. The communication was very easy. You are
-          welcomed to come back to CASA PULPO any time !…
+          Isaac is really nice. The communication was very easy. You are
+          welcomed to come back to CASA PULPO any time
         </div>
         <div className="flex gap-2">
           <div className=" w-[50px] h-[50px] object-cover">
