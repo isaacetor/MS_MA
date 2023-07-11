@@ -33,6 +33,8 @@ const Home = () => {
           amount={33}
           date="Jul 29 - Aug 3"
           route="/products"
+          userRoute="/user"
+          wishlistFunc={() => {}}
         />
       ))}
     </div>

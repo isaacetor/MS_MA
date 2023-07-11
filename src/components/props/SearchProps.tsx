@@ -3,7 +3,7 @@ import { FC } from "react";
 
 const SearchProps: FC<searchData> = ({ placeholder, icons }) => {
   return (
-    <div className="sm:w-[340px] h-[60%] py-2 px-2 bg-white bg-opacity-10 backdrop-filter shadow-md backdrop-blur-lg border border-gray-100 rounded-full flex items-center justify-between overflow-hidden gap-5">
+    <div className="max-md:w-full w-[30%] h-[60%] py-2 px-2 bg-white bg-opacity-10 backdrop-filter shadow-md backdrop-blur-lg border border-gray-100 rounded-full flex items-center justify-between overflow-hidden gap-5">
       <div className="w-[90%] h-full  flex items-center ">
         <input
           type="search"

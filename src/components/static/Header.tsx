@@ -17,7 +17,8 @@ const Header: FC<HeaderData> = ({ width }) => {
   return (
     <header className="h-[80px] bg-white w-full border-b-[1px] sticky top-0 z-40">
       <div
-        className={`h-full m-[auto] w-${width} flex justify-between items-center bg-white z-index-20`}>
+        className={`h-full m-[auto] w-${width} flex justify-between items-center bg-white z-index-20 max-md:gap-10`}
+      >
         {/* logo */}
         <Link to="/">
           <div className="text-globalTextColor text-xl font-medium">MSMA</div>
@@ -27,8 +28,9 @@ const Header: FC<HeaderData> = ({ width }) => {
         <SearchProps placeholder="Serch for an item" icons={<BiSearch />} />
         {/* auth */}
         <div
-          className="p-3 rounded-full border flex items-center justify-center gap-3 cursor-pointer"
-          onClick={showAuth}>
+          className="p-3 rounded-full border flex items-center justify-center gap-3 cursor-pointer max-md:hidden"
+          onClick={showAuth}
+        >
           <div className="text-2xl">
             <IoIosMenu />
           </div>

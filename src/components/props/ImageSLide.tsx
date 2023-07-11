@@ -7,7 +7,13 @@ import {
 import { imageData } from "../../types";
 import { Link } from "react-router-dom";
 
-const ImageSLide: FC<imageData> = ({ authorCover, cover }) => {
+const ImageSLide: FC<imageData> = ({
+  authorCover,
+  cover,
+  route,
+  userRoute,
+  wishlistFunc,
+}) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [show, setShow] = useState(false);
 
@@ -33,10 +39,19 @@ const ImageSLide: FC<imageData> = ({ authorCover, cover }) => {
       }}
       className="relative w-full h-[315px] rounded-2xl"
     >
-      <div className="absolute cursor-pointer text-white shadow-md hover:text-purple-700 text-2xl top-3 right-3 transition-all ease-in duration-200">
+      {/* wishlist */}
+
+      <div
+        className="absolute cursor-pointer text-white shadow-md hover:text-purple-700 text-2xl top-3 right-3 transition-all ease-in duration-200"
+        onClick={() => {
+          wishlistFunc;
+        }}
+      >
         <AiTwotoneHeart />
       </div>
-      <Link to="products">
+
+      {/* image slide */}
+      <Link to={route}>
         <img
           className="w-full h-full rounded-2xl object-cover object-top transition-all ease-in duration-500 max-sm:rounded-none"
           src={cover[currentImageIndex]}
@@ -64,7 +79,7 @@ const ImageSLide: FC<imageData> = ({ authorCover, cover }) => {
       </div>
 
       {/* link to individual author page */}
-      <Link to="user">
+      <Link to={userRoute}>
         <div className="absolute w-14 h-14 bottom-3 left-3">
           <img
             className="w-full h-full object-cover object-top shadow-2xl rounded-full  "

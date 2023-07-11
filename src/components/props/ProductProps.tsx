@@ -12,12 +12,20 @@ const ProductProps: FC<cardData> = ({
   date,
   place,
   route,
+  userRoute,
+  wishlistFunc,
 }) => {
   return (
     <div className="flex flex-col gap-1 w-full  my-6 ">
       {/*product picture */}
 
-      <ImageSLide cover={cover} authorCover={authorCover} />
+      <ImageSLide
+        cover={cover}
+        authorCover={authorCover}
+        route={route}
+        userRoute={userRoute}
+        wishlistFunc={wishlistFunc}
+      />
       {/* product Text */}
       <Link to={route}>
         <ProductFeaturedText

@@ -6,7 +6,7 @@ import Image from "../components/props/productProp/Image";
 import TitleArea from "../components/props/productProp/TitleArea";
 import Ad from "../components/props/productProp/Ad";
 import EntireHosting from "../components/props/productProp/EntireHosting";
-import { Offers, Reservation, Reviews } from "../components";
+import { Offers, Reservation, Reviews, Thingstoknow } from "../components";
 
 const singleProduct = () => {
   const dummyImage = [img1, img3, img4, img2];
@@ -47,6 +47,9 @@ const singleProduct = () => {
         </div>
         <div className="py-20">
           <Reviews />
+        </div>
+        <div>
+          <Thingstoknow />
         </div>
       </div>
     </div>

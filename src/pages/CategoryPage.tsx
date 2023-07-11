@@ -7,7 +7,7 @@ import profile from "../assets/jpg/profile.jpeg";
 import { ProductProps } from "../components";
 
 const CategoryPage = () => {
-  const dummyImage = [img1, img3, img4, img2];
+  const dummyImage = [img1, img3, img4, img2, img1, img3, img4, img2];
 
   return (
     <div className="w-[90%] m-auto">
@@ -22,7 +22,9 @@ const CategoryPage = () => {
             rating={4.84}
             amount={33}
             date="Jul 29 - Aug 3"
-            route=""
+            route="/products"
+            userRoute="/user"
+            wishlistFunc={() => {}}
           />
         ))}
       </div>

@@ -14,15 +14,25 @@ const Reservation = () => {
       </div>
       <div className="flex flex-col gap-3">
         <button className="w-full h-12 font-[500] rounded-lg bg-purple-700 text-white border-none focus:outline-none">
-          Reserve
+          Message seller
         </button>
         <div className="text-center text-slate-800">
           You won't be charged yet
         </div>
       </div>
-      <div className="py-5 border-t-[1px] font-[600] border-t-slate-200 flex justify-between ">
+      <div className="pt-5 border-t-[1px] font-[600] border-t-slate-200 flex justify-between ">
         <div>Total before taxes</div>
         <div>$607</div>
+      </div>{" "}
+      <hr />
+      {/* tip */}
+      <div className="">
+        <h2 className="font-semibold w-full flex justify-center">
+          Safety tips
+        </h2>
+        <li>Do not send any pre-payments</li>
+        <li>Inspect the goods to make sure they meet your needs</li>
+        <li>Check all documentation and only pay if you're satisfie</li>
       </div>
     </div>
   );

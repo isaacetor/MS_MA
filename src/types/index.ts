@@ -12,6 +12,8 @@ export type cardData = {
   amount: number;
   date: string;
   route: string;
+  userRoute: string;
+  wishlistFunc: React.MouseEventHandler<HTMLDivElement> | undefined;
 };
 
 export type HeaderData = {
@@ -22,6 +24,9 @@ export type HeaderData = {
 export type imageData = {
   cover: any;
   authorCover: any;
+  route: any;
+  userRoute: string;
+  wishlistFunc: any;
 };
 
 export type textData = {

@@ -28,7 +28,6 @@ const Categories = () => {
         <CategoryProps />
         <CategoryProps />
         <CategoryProps />
-
         <CategoryProps />
         <CategoryProps />
         <CategoryProps />
