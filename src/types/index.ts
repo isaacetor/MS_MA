@@ -11,6 +11,7 @@ export type cardData = {
   rating: number;
   amount: number;
   date: string;
+  route: string;
 };
 
 export type HeaderData = {

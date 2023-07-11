@@ -1,9 +1,13 @@
+import { Link } from "react-router-dom";
+
 const CategoryProps = () => {
   return (
     <div>
-      <p className="cursor-pointer bg text-black hover:text-globalTextColor-hover ">
-        product
-      </p>
+      <Link to="/category">
+        <p className="cursor-pointer text-sm bg text-black hover:text-globalTextColor-hover ">
+          Furniture
+        </p>
+      </Link>
     </div>
   );
 };

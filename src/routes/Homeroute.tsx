@@ -3,6 +3,8 @@ import { lazy, Suspense } from "react";
 import { SingleProductlayout } from "../components";
 import { SingleProduct } from "../pages";
 import Profile from "../pages/Profile";
+import CategoryLayout from "../components/layout/CategoryLayout";
+import CategoryPage from "../pages/CategoryPage";
 // Lazy load the components and pages
 // const LazyHomeLayout = lazy(() => import('../components/Homelayout'));
 const Home = lazy(() => import("../pages/Home"));
@@ -45,6 +47,16 @@ export const elements = createBrowserRouter([
       {
         index: true,
         element: <SingleProduct />,
+      },
+    ],
+  },
+  {
+    path: "/category",
+    element: <CategoryLayout />,
+    children: [
+      {
+        index: true,
+        element: <CategoryPage />,
       },
     ],
   },

@@ -11,6 +11,7 @@ const ProductProps: FC<cardData> = ({
   amount,
   date,
   place,
+  route,
 }) => {
   return (
     <div className="flex flex-col gap-1 w-full  my-6 ">
@@ -18,7 +19,7 @@ const ProductProps: FC<cardData> = ({
 
       <ImageSLide cover={cover} authorCover={authorCover} />
       {/* product Text */}
-      <Link to="products">
+      <Link to={route}>
         <ProductFeaturedText
           authorName={authorName}
           place={place}
