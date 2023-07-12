@@ -1,4 +1,5 @@
 import { AiFillStar } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Reservation = () => {
   return (
@@ -13,9 +14,11 @@ const Reservation = () => {
         </div>
       </div>
       <div className="flex flex-col gap-3">
-        <button className="w-full h-12 font-[500] rounded-lg bg-purple-700 text-white border-none focus:outline-none">
-          Message seller
-        </button>
+        <Link to="/seller">
+          <button className="w-full h-12 font-[500] rounded-lg bg-purple-700 text-white border-none focus:outline-none">
+            Message seller
+          </button>
+        </Link>
         <div className="text-center text-slate-800">
           You won't be charged yet
         </div>

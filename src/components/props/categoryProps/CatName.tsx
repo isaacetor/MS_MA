@@ -1,7 +1,7 @@
 const CatName = () => {
   return (
     <div className="flex center justify-center items-center">
-      <div className="py-6 px-20 rounded-xl border mb-7 text-xl font-medium">
+      <div className=" w-full py-16 flex justify-center bg-black text-white rounded-xl border mb-7 text-xl font-medium">
         Category Name
       </div>
     </div>

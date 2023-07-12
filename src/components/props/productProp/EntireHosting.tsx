@@ -3,6 +3,7 @@ import { FaTags } from "react-icons/fa";
 import img1 from "../../../assets/jpg/suit.jpeg";
 import { FC } from "react";
 import { Itemize } from ".";
+import { Link } from "react-router-dom";
 
 const EntireHosting: FC<iEntire> = ({
   host,
@@ -20,9 +21,11 @@ const EntireHosting: FC<iEntire> = ({
             {guests} guests . {bedrooms} bedrooms . {beds} beds . {baths} baths
           </div>
         </div>
-        <div className="w-12 h-12 rounded-[50%]">
-          <img className="w-full h-full rounded-[50%]" src={img1} />
-        </div>
+        <Link to="/user">
+          <div className="w-12 h-12 rounded-[50%]">
+            <img className="w-full h-full rounded-[50%]" src={img1} />
+          </div>
+        </Link>
       </div>
       <div className="border-b-[1px] border-b-slate-300 py-7 flex flex-col gap-6">
         <Itemize
